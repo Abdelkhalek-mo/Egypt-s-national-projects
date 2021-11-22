@@ -1,0 +1,636 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*=====
+كودالغلاف 
+=======*/
+
+.cover
+{
+    background: #1d1542;
+    background-image: url("1.1.png");
+    height: 800px;
+    width: 100%;
+    font-family: sans-serif;
+    position: relative;
+    background-size:cover;
+    height: auto;
+	background-repeat: no-repeat;
+}
+/*=====
+كودالمساحة الخاصة بشريط العناوين
+=======*/
+header
+{
+    height: 130px;
+}
+/*=====
+كودالمساحة الخاصة بمنتصف الصفحة 
+=======*/
+.middle
+{
+    height: 550px;
+    text-align: right;
+}
+
+.text1
+{
+    margin-right: 8%;
+    margin-top: 0%;
+}
+
+/*=====
+كودالجملة الرئيسية
+=======*/
+.text1 h2
+{
+   
+    text-align: center;
+    font-size: 40px;
+    color: #FFD700;
+    margin-top: 10px;
+    margin-left: 25px;
+    animation:  mymove 10s infinite linear;
+}
+@keyframes mymove 
+{
+    0%, 100% {letter-spacing: 0.5px;}
+    50%  { letter-spacing: 15px}
+
+    
+}
+
+/*=====
+كوديعطي حدود لعناصر الصفحة
+=======*/
+header, .middle, .wave, footer, #box-t
+{
+	border: 2px solid #ffd90000;
+}
+/*=====
+كودالنسر الرئيسي
+=======*/
+.photo777
+{
+    background-image: url("777.png");
+    height: 100px;
+    display: block;
+    width: 230px;
+    background-size:cover;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 0px 53px 0px;
+}
+/*=====
+كود شريط العناوين كامل
+=======*/
+nav
+{
+width: 80%;
+margin: auto;
+margin-top: 20px;
+padding: 20px 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+/*=====
+كودلوجو اعلي الصفحة
+=======*/
+.logo
+{
+width: 200px;
+cursor: pointer;
+}
+/*=====
+كودمصفوفة عناصر الصفحة
+=======*/
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+nav ul li a:hover
+{
+   color: #fcd919;
+   font-size: 14px;
+}
+/*=====
+كودشكل البحث
+=======*/
+.search
+{
+   position: absolute;
+   top: 58%;
+   left: 48%;
+   width: 500px;
+   transform: translate(-50%, -50%);
+
+}
+input
+{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: .5s; 
+}
+input[type="text"]
+{
+    background: #fff;
+    width: 340px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+
+}
+input[type="submit"]
+{
+    position: relative;
+    left: -5px;
+    border-radius: 0 25px  25px 0;
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #ff0000;
+    color: #fff;
+
+
+}
+input[type="submit"]:hover
+{
+ background:#000000 ;
+}
+/*=====
+كودالتحكم بلنكات  
+=======*/
+a
+{
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 12px;
+	transition: all 0.8s;
+	
+	
+}
+header a
+{
+	color: #ffffff;
+	font-size: 12px;
+}
+/*=====
+كودمنتصف الصفحة
+=======*/
+.middle
+{
+
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+/*=====
+كودعناصر تحكم الخاص بالصحة
+=======*/
+/*=====
+كودشكل الدواء man
+=======*/
+.man
+{
+    width: 10%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    transition: left 1s ;
+    bottom: 15%
+}
+/*=====
+كودbox
+الشكل الرمادي الذي يظهر في الخلفية
+=======*/
+.box
+{
+    width: 10%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    transition: bottom 1s ; 
+    bottom: 15%;
+
+}
+
+/*=====
+كودالتحكم عند لمس الماوس
+=======*/
+.img-box:hover .box
+{
+    bottom: 70px;
+
+}
+.img-box:hover .man
+{
+    left: 50px;
+
+}
+
+/*=====
+كودشكل الاسكان
+=======*/
+.man2
+{
+    width: 10%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 570px;
+    transition: left 1s;
+    bottom: 15%
+}
+
+.box2
+{
+    width: 10%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 570px;
+    transition: bottom 1s; 
+    bottom: 15%
+
+}
+.img-box2:hover .box2
+{
+    bottom: 70px;
+
+}
+.img-box2:hover .man2
+{
+    left: 550px;
+
+}
+
+/*=====
+كودشكل التعليم
+=======*/
+.man3
+{
+    width: 10%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 329px;
+    transition: left 1s;
+    bottom: 15%
+}
+
+.box3
+{
+    width: 10%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 329px;
+    transition: bottom 1s; 
+    bottom: 15%
+
+}
+
+
+
+.img-box3:hover .box3
+{
+    bottom: 70px;
+
+}
+.img-box3:hover .man3
+{
+    left: 320px;
+
+}
+/*=====
+كودشكل العسكرية
+=======*/
+.man4
+{
+    width: 10%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 810px;
+    transition: left 1s;
+    bottom: 15%
+}
+
+.box4
+{
+    width: 10%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 810px;
+    transition: bottom 1s; 
+    bottom: 15%
+
+}
+
+
+
+.img-box4:hover .box4
+{
+    bottom: 70px;
+
+}
+.img-box4:hover .man4
+{
+    left: 790px;
+
+}
+/*=====
+كودشكل االمواطنين
+=======*/
+.man5
+{
+    width: 10%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 1040px;
+    transition: left 1s;
+    bottom: 15%
+}
+
+.box5
+{
+    width: 10%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 1040px;
+    transition: bottom 1s; 
+    bottom: 15%
+
+}
+
+
+
+.img-box5:hover .box5
+{
+    bottom: 70px;
+
+}
+.img-box5:hover .man5
+{
+    left: 1019px;
+
+}
+/*=====
+كودشكل اللقاح
+=======*/
+.man6
+{
+    width: 10%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 1260px;
+    transition: left 1s;
+    bottom: 15%
+}
+
+.box6
+{
+    width: 10%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 1260px;
+    transition: bottom 1s; 
+    bottom: 15%
+
+}
+
+#box-t
+{
+   
+    margin-top: 20px;
+
+}
+#box-t .box, .box2, .box3, .box4, .box5, .box6
+{
+    float:right;
+    text-align: center;
+    width: 10%;
+    padding: 10px;
+}
+
+.img-box6:hover .box6
+{
+    bottom: 70px;
+
+}
+.img-box6:hover .man6
+{
+    left: 1219px;
+
+}
+
+
+/*=====
+كودشكل شريط اسفل الموقع
+=======*/
+footer
+{
+	padding: 5px;
+	margin-top: 2px;
+	color: rgb(0, 0, 0);
+	background-color: #fcd919;
+	text-align-last: center;
+	font-weight: bold;
+	font-size: 13px;
+    
+}
+
+@media (max-width: 786px) {
+    header .logo0,
+    header li,
+    header .nav,
+    #box-t
+    .search
+    .text1
+    .cover
+    #box-t .box, .box2, .box3, .box4, .box5, .box6
+
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header
+    {
+        padding-bottom: 20px;
+
+    }
+  .search form input[type="text"]
+  {
+      width: 87%;
+      margin-top: 200px;
+      margin-right: 5%;
+
+
+  }
+  .search form input[type="submit"]
+  {
+      width: 90%;
+      display: block;
+      margin-top: 5px;
+      
+  }
+  .logo0 .logo
+  {
+     margin-bottom: 200px;
+  }
+  body 
+  {
+      width: 100%;
+      height: 100%;
+  }
+  .man3
+{
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    transition: left 1s;
+    bottom: -20%
+}
+
+.box3
+{
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    transition: bottom 1s; 
+    bottom: -20%
+    
+
+}
+.man2
+{
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    transition: left 1s;
+    bottom: -40%
+}
+
+.box2
+{
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    transition: bottom 1s; 
+    bottom: -40%
+
+}
+.man4
+{
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    transition: left 1s;
+    bottom: -60%
+}
+
+.box4
+{
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    transition: bottom 1s; 
+    bottom: -60%
+
+}
+
+
+
+
+/*=====
+كودشكل االمواطنين
+=======*/
+.man5
+{
+    width: 100px;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    transition: left 1s;
+    bottom: -80%
+}
+
+.box5
+{
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    transition: bottom 1s; 
+    bottom: -80%
+
+}
+
+
+
+
+/*=====
+كودشكل اللقاح
+=======*/
+.man6
+{
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    transition: left 1s;
+    bottom: -100%
+}
+
+.box6
+{
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    transition: bottom 1s; 
+    bottom: -100%
+
+}
+
+}
